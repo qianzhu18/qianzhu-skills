@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qianzhu Writing Style"
+  short_description: "让千逐的公众号写作更像本人，也更有实践感与成长感"
+  default_prompt: "Use $qianzhu-writing-style to draft or revise a qianzhu article or bio with practical value, personal judgment, and visible growth trace."
