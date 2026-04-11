@@ -25,6 +25,13 @@
 - 隐喻转化机制：如何超现实地表达观点
 - 2-3 个象征性辅助细节
 
+先做本体绑定检查：
+
+- 主体必须来自文章真正讨论的对象、工具、项目、工程结构或生活场景
+- 对 AI coding / Harness / Agent 工程文章，优先使用工程工作台、文档树、agent、缰绳/马具、代码仓库、bug、截图、反馈回路等视觉锚点
+- 罗盘、迷宫、光门、抽象云、漂浮线条只能作为辅助，不要作为主视觉
+- 如果读者只看封面，应该能感到它和这篇文章的具体对象有关，而不是一张通用成长/学习配图
+
 ### 3. 输出提示词
 
 最终发送给图像模型的 prompt 必须使用英文，按这个格式：
@@ -86,19 +93,19 @@ STRICT NEGATIVE CONSTRAINTS:
 
 ```text
 Analysis:
-- Core theme: Embodied Learning
-- Core viewpoint: AI coding matters because real projects train the maker through action, feedback, and embodied interaction with AI and the world.
+- Core theme: Harness
+- Core viewpoint: Harness Engineering is valuable because it makes project context visible enough for a human to steer AI agents through real coding work.
 - Emotional tone: contemplative
-- Key visual anchors: antique compass, human hand, thread, miniature labyrinth, tool silhouettes, distant doorway, black text reserve.
+- Key visual anchors: leather harness, reins, engineering workbench, blank project folder tree, faceless mechanical agent hand, blank code-grid panels, black text reserve.
 
 Metaphor:
-- Foreground subject: an antique compass
-- Surreal transformation: the compass needle becomes a human hand pulling a thread out of a labyrinth
-- Supporting details: thin thread trails, two tiny tool silhouettes, a distant open doorway
+- Foreground subject: a Victorian leather harness and rein system
+- Surreal transformation: the reins do not lead to a horse; they bind a human steering hand to project folders, agent work, and code context
+- Supporting details: a bug-shaped metal token, a blank screenshot frame, a branching codebase map without symbols
 
 Final prompt:
-A horizontal black and white etching banner (16:9 ratio), depicting an antique compass lying open on rough paper in the left half of the frame, but its needle has transformed into a human hand pulling a thin thread out of a miniature labyrinth. The compass rendered in detailed cross-hatching showing scratched glass and worn brass translated into black ink texture, the thread and labyrinth in lighter stippling creating a feeling of embodied orientation through action. A hard candle-like light source from the upper left against pure black void. Two tiny tool silhouettes and a distant open doorway in negative space. The right third remains pure black for text overlay. contemplative mood in Victorian illustration/Gustave Dore style. The final image must contain zero text, letters, numbers, logos, signatures, or watermarks.
+A horizontal black and white etching banner (16:9 ratio), depicting a Victorian leather driving harness and rein system mounted over an old engineering workbench in the left half of the frame, but the reins do not lead to a horse: they bind together a cabinet of blank project folder tabs, a faceless mechanical coding agent hand, and blank code-grid panels with no symbols. The leather harness rendered in detailed cross-hatching showing worn straps, buckles, stitched edges, and brushed metal rings, the branching reins and unlabeled project structure in lighter stippling creating a feeling of a human steering AI coding through visible project context. A hard desk-lamp light source from the upper left against pure black void. A small bug-shaped metal token, a blank screenshot frame, and a branching codebase map without symbols appear in negative space. The right third remains pure black for text overlay. contemplative mood in Victorian illustration/Gustave Dore style. The final image must contain zero text, letters, numbers, logos, signatures, or watermarks.
 
 Metaphor explanation:
-The compass is the steering problem in AI coding. The hand pulling a thread from the maze shows that orientation comes from acting, receiving feedback, and gradually finding a path through a real project.
+The harness is the actual steering mechanism between human judgment, documents, agents, bugs, screenshots, and code context. It keeps the cover tied to the article ontology instead of turning it into a generic learning metaphor.
 ```

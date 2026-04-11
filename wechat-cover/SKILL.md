@@ -20,10 +20,11 @@ description: Use when creating or revising qianzhu WeChat article cover images, 
 
 1. 先读文章，提炼核心主题、核心观点、情绪基调和关键视觉锚点。
 2. 读 [references/dankoe-victorian-cover.md](references/dankoe-victorian-cover.md)，按里面的模板写英文 prompt。
-3. 公众号项目默认生成 2 张封面候选，保留 prompt 文件，放在项目 `prompts/` 目录，不放进 `assets/`。
-4. 候选图放进 `assets/`，推荐命名为 `源稿-wechat-cover-dankoe-01.png` 和 `源稿-wechat-cover-dankoe-02.png`。
-5. 选择 1 张作为正文首图和 frontmatter cover。若 O-Publish 会强制标准文件名，可把入选图同步为 `源稿-wechat-cover.png`，或在 hosted 稿中使用独立候选 URL 避免 CDN 同名缓存。
-6. 重新跑全链路上传图床，检查封面 URL 是 200，且最终 hosted 稿封面指向入选图。
+3. 先做“本体绑定”检查：封面主体必须来自文章真正讨论的对象、工具、项目、工程结构或场景；不要只用罗盘、迷宫、云、光门这类泛学习/泛成长隐喻。
+4. 公众号项目默认生成 2 张封面候选，保留 prompt 文件，放在项目 `prompts/` 目录，不放进 `assets/`。
+5. 候选图放进 `assets/`，推荐命名为 `源稿-wechat-cover-dankoe-01.png` 和 `源稿-wechat-cover-dankoe-02.png`。
+6. 选择 1 张作为正文首图和 frontmatter cover。若 O-Publish 会强制标准文件名，可把入选图同步为 `源稿-wechat-cover.png`，或在 hosted 稿中使用独立候选 URL 避免 CDN 同名缓存。
+7. 重新跑全链路上传图床，检查封面 URL 是 200，且最终 hosted 稿封面指向入选图。
 
 ## Model Routing
 
@@ -62,6 +63,7 @@ bun ~/.codex/skills/smart-illustrator/scripts/generate-image.ts \
 - 16:9 横向封面
 - 黑白木刻/蚀刻风格
 - 有 Gustave Dore 式交叉影线和点画
+- 主体和文章本体相关，而不是只有抽象漂亮的学习/方向/迷宫隐喻
 - 一个清晰前景主体，最多 2-3 个辅助细节
 - 图片本身没有文字、字母、数字、logo、水印
 - 有纯黑负空间给后期文字叠加
