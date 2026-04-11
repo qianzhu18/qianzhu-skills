@@ -22,6 +22,15 @@ This skill is designed to keep the writing:
 - human
 - growth-oriented instead of institutional
 
+### `wechat-cover`
+
+A cover-generation skill for qianzhu WeChat articles. It standardizes:
+
+- Dan Koe style black-and-white Victorian woodcut / etching cover prompts
+- 16:9 horizontal cover candidates
+- Gemini 3 first, `gemini-2.5-flash-image` only after stalls or failures
+- Obsidian fullchain cover asset and hosted URL checks
+
 ## Structure
 
 ```text
@@ -34,4 +43,9 @@ qianzhu-writing-style/
     ├── persona.md
     ├── style-examples.md
     └── style-guide.md
+wechat-cover/
+├── SKILL.md
+├── agents/openai.yaml
+└── references/
+    └── dankoe-victorian-cover.md
 ```

@@ -73,8 +73,8 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 10. 如果任务是 Obsidian 里的完整内容生产，先明确这是不是“只写文”还是“项目全链路”：
    - 只写文：正文优先，其他资产按需补。
    - 项目全链路：必须继续补齐标题池、短信息流、封面图、正文配图、hosted 稿，不能把 prompt-pack 当成完成态。
-11. 如果进入项目全链路，显式联动 `smart-illustrator`：
-   - 封面图：默认要有 1 张最终可用封面，不要只停在提示词。
+11. 如果进入项目全链路，显式联动 `wechat-cover` 和 `smart-illustrator`：
+   - 封面图：用 `wechat-cover` 管理公众号封面的审美、prompt、候选图、模型降级策略和图床验证；默认要有 1 张最终可用封面，不要只停在提示词。
    - 正文配图：公众号默认 3-5 张，小红书按卡片节奏补图。
    - 如果自动生图失败，要继续手动补图或明确说明阻塞原因；“没封面/没图”不算完成。
 12. 如果流程需要分发资产，再额外产出：
@@ -114,7 +114,7 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 明明抓到了一个日常现象，但最后只写成“挺有意思的观察”，没有再往深处拆
 - 结尾已经有判断了，又滑回“这也是我最近越来越有感觉的一件事”“欢迎交流”“之后还会继续写”这种弱收尾
 - 正文写得不错，但封面、配图、hosted 稿没补，导致链路断在最后一步
-- 明明是 Obsidian 项目，却没有显式调用 `smart-illustrator` 处理封面和配图
+- 明明是 Obsidian 项目，却没有显式调用 `wechat-cover` 处理公众号封面，或没有调用 `smart-illustrator` 处理正文配图
 
 ## References
 
