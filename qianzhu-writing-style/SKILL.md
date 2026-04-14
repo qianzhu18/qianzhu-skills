@@ -1,6 +1,6 @@
 ---
 name: qianzhu-writing-style
-description: Use when drafting or revising qianzhu/Lucien personal-brand writing, especially WeChat long-form articles, Obsidian content-production projects, bios, and promo copy about AI tools, open-source projects, workflows, internet culture observations, everyday-phenomenon insights, trend observations, and the real growth of a young practitioner. Triggers include 公众号文章, 写稿, 用我的风格写, 改成千逐语气, 内容生产全流程, Obsidian 写作, 封面图, 配图, 作者简介, 置顶介绍, 互联网文化观察, 从小事洞察趋势, and article rewrites that feel too institutional, too abstract, or not enough like qianzhu.
+description: Use when drafting or revising qianzhu/Lucien personal-brand writing, especially WeChat long-form articles, Obsidian content-production projects, bios, and promo copy about AI tools, AI coding entry pieces, open-source projects, workflows, internet culture observations, everyday-phenomenon insights, trend observations, and the real growth of a young practitioner. Triggers include 公众号文章, 写稿, 用我的风格写, 改成千逐语气, 内容生产全流程, Obsidian 写作, AI 编程入坑, IDE 入门, 豆包之后学什么, Deepseek 之后学什么, 千问之后学什么, 人生 alpha, 封面图, 配图, 作者简介, 置顶介绍, 互联网文化观察, 从小事洞察趋势, and article rewrites that feel too institutional, too abstract, or not enough like qianzhu.
 ---
 
 # Qianzhu Writing Style
@@ -21,16 +21,18 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 1. [references/persona.md](references/persona.md) 锁定身份、可信度和气质。
 2. [references/audience.md](references/audience.md) 判断这篇是写给谁看。
 3. [references/content-methodology.md](references/content-methodology.md) 选择文章主线和结构。
-4. 如果题目来自一个看似很小、很日常、很互联网的现象，读 [references/everyday-insight.md](references/everyday-insight.md)。
-5. [references/style-guide.md](references/style-guide.md) 处理句子、语气和降晦涩。
-6. 如果还是太泛，再读 [references/style-examples.md](references/style-examples.md) 做风格校准。
-7. 如果任务是 Obsidian 项目化内容生产、要补标题池/短安利/封面/配图/图床回写，读 [references/obsidian-fullchain.md](references/obsidian-fullchain.md)。
+4. 如果题目是 AI 编程入坑、IDE 入门、学生/小白建议、豆包/Deepseek/千问之后下一步该学什么，读 [references/ai-coding-entry.md](references/ai-coding-entry.md)。
+5. 如果题目来自一个看似很小、很日常、很互联网的现象，读 [references/everyday-insight.md](references/everyday-insight.md)。
+6. [references/style-guide.md](references/style-guide.md) 处理句子、语气和降晦涩。
+7. 如果还是太泛，再读 [references/style-examples.md](references/style-examples.md) 做风格校准。
+8. 如果任务是 Obsidian 项目化内容生产、要补标题池/短安利/封面/配图/图床回写，读 [references/obsidian-fullchain.md](references/obsidian-fullchain.md)。
 
 ## When To Use
 
 - 公众号 / 博客 / 小红书 / 小绿书等个人品牌内容
 - Obsidian 内容生产项目，需要从主稿一路补齐分发资产、封面图、正文配图和可发布稿
 - AI 工具、开源项目、工作流、技术趋势、产品观察、成长记录
+- AI 编程入门、IDE 入坑、学生/小白建议、职业 alpha 判断
 - 互联网文化、校园观察、刷屏梗图、日常小事背后的传播/产品/人性洞察
 - 文章开头、结尾、作者自述、个人介绍、项目总结
 - 需要补 100 字内短安利文案、转发配文、置顶介绍时
@@ -48,12 +50,13 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 让读者看到一个普通年轻人如何边学边做、慢慢长出来
 - 能从平常事物、日常现象、互联网小狂欢里拆出更深一层的传播和人性结构
 - 写 AI Coding、Harness、Agent 工程范式时，概念只是入口，重点是作者亲手试过之后形成的阶段性判断
+- 写 AI 编程入坑稿时，要把工具推荐写成能力杠杆判断，而不是写成一篇冷冰冰的 IDE 教程
 - 保留真实、清醒和一点幽默，不写成端着的媒体腔
 - 有结构，但保留松弛感和呼吸感
 
 ## Workflow
 
-1. 先判断题材属于哪条主线：`tool/open-source`、`workflow`、`trend-observation`、`growth-record`。
+1. 先判断题材属于哪条主线：`tool/open-source`、`workflow`、`trend-observation`、`growth-record`、`ai-coding-entry`。
 2. 去 [references/audience.md](references/audience.md) 里选 1 个主读者，最多再带 1 个次读者。选不出来，说明题目还没讲清。
 3. 为这篇文章先定两条线：
    - `价值线`：读者具体能拿走什么？
@@ -62,26 +65,31 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
    - 这件小事为什么值得写，而不只是“有点意思”？
    - 它暴露的是哪层结构：人性、传播、产品、关系，还是文化模板？
    - 这篇最后要留下的那个“更具体的提醒”到底是什么？
-5. 如果题材是 AI Coding、Harness、Agent 工程范式或开源方法论反思，先找一个“反判断”：
+5. 如果题材是 AI 编程入坑、IDE 入门、学生/小白建议或“人生 alpha”判断，强制回答这四个问题：
+   - 这篇真正想推荐的，到底是某个工具，还是一种能力杠杆？
+   - 这篇是在讲“学会写代码”，还是在讲“先拿到编程结果”？
+   - 对学生、非科班和小白来说，最该先练的到底是什么：语法，还是主动性、文件管理、上下文管理和参考拆解？
+   - 这篇最后要留下的，是一套会过时的技巧，还是一个“为什么现在就该入场”的判断？
+6. 如果题材是 AI Coding、Harness、Agent 工程范式或开源方法论反思，先找一个“反判断”：
    - 这个概念在当下为什么有用？
    - 它又为什么可能只是阶段性脚手架？
    - 作者亲手试过之后，真正留下来的方法是什么？
-6. 找一个真实场景、困惑、任务或摩擦点开头，不要一上来堆定义。
-7. 先用人话讲顺，再抽出 1-3 个值得记住的判断。
-8. 结尾先写“最后那一句提醒”，再回头检查前文是不是都在为它服务。
-9. 用 [references/style-guide.md](references/style-guide.md) 里的“降晦涩方法”和“去机构感方法”过一遍。
-10. 如果任务是 Obsidian 里的完整内容生产，先明确这是不是“只写文”还是“项目全链路”：
+7. 找一个真实场景、困惑、任务或摩擦点开头，不要一上来堆定义。
+8. 先用人话讲顺，再抽出 1-3 个值得记住的判断。
+9. 结尾先写“最后那一句提醒”，再回头检查前文是不是都在为它服务。
+10. 用 [references/style-guide.md](references/style-guide.md) 里的“降晦涩方法”和“去机构感方法”过一遍。
+11. 如果任务是 Obsidian 里的完整内容生产，先明确这是不是“只写文”还是“项目全链路”：
    - 只写文：正文优先，其他资产按需补。
    - 项目全链路：必须继续补齐标题池、短信息流、封面图、正文配图、hosted 稿，不能把 prompt-pack 当成完成态。
-11. 如果进入项目全链路，显式联动 `wechat-cover` 和 `smart-illustrator`：
+12. 如果进入项目全链路，显式联动 `wechat-cover` 和 `smart-illustrator`：
    - 封面图：用 `wechat-cover` 管理公众号封面的审美、prompt、候选图、模型降级策略和图床验证；默认要有 1 张最终可用封面，不要只停在提示词。
    - 正文配图：公众号默认 3-5 张，小红书按卡片节奏补图。
    - 如果自动生图失败，要继续手动补图或明确说明阻塞原因；“没封面/没图”不算完成。
-12. 如果流程需要分发资产，再额外产出：
+13. 如果流程需要分发资产，再额外产出：
    - 标题池与推荐标题拆解
    - 1-3 条作者简介 / 置顶介绍
    - 3-5 条短信息流安利文案，每条不超过 100 字
-13. 如果任务落在 Obsidian 项目目录里，默认把结果组织成可复用项目，而不是零散文案：
+14. 如果任务落在 Obsidian 项目目录里，默认把结果组织成可复用项目，而不是零散文案：
    - `公众号/源稿.md`
    - `title/公众号-爆款标题候选.md`
    - `title/短信息流安利文案.md`
@@ -94,6 +102,7 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 少空洞大词，多具体动词和真实场景
 - 少“行业正确”，多亲手试过之后形成的判断
 - 写工程范式时不要做术语崇拜，要保留“阶段性有用，但未来可能被模型/平台吃掉”的清醒感
+- 写 AI 编程入坑稿时，不要写成“又来一个新工具”，而要写成“普通人为什么现在该先拿到这类能力”
 - 解释概念时优先类比、对比、场景
 - 内容要有用，但作者不能消失
 - 作者要真实，但内容不能退化成日记
@@ -110,6 +119,8 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 太像热点搬运号，资料很多，作者消失
 - 太像硬凹成长号，年纪不大却像在做人生总结
 - 太像工具收藏夹，没有主线，只有碎片推荐
+- 明明在写 AI 编程入坑，最后却只剩 IDE 截图、安装步骤和工具名对比
+- 明明核心是给学生和小白一个行动建议，最后却写成程序员黑话和复杂框架罗列
 - 太端着、太严肃，像一篇“应该被转发”的文章，而不是一个人真的在说话
 - 明明抓到了一个日常现象，但最后只写成“挺有意思的观察”，没有再往深处拆
 - 结尾已经有判断了，又滑回“这也是我最近越来越有感觉的一件事”“欢迎交流”“之后还会继续写”这种弱收尾
@@ -121,6 +132,7 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - [references/persona.md](references/persona.md): 稳定人设、可信度锚点、成长型定位
 - [references/audience.md](references/audience.md): 读者分层、读者期待、选题对位方式
 - [references/content-methodology.md](references/content-methodology.md): 内容主线、结构模板、双线写法
+- [references/ai-coding-entry.md](references/ai-coding-entry.md): AI 编程入坑、IDE 入门、学生/小白建议、人生 alpha 叙事
 - [references/everyday-insight.md](references/everyday-insight.md): 平常事物洞察写法、SBTI 类文章校准
 - [references/style-guide.md](references/style-guide.md): 语气、结构、降晦涩、去机构感、短安利规范
 - [references/style-examples.md](references/style-examples.md): 句型示例、开头结尾参考、定位句校准
