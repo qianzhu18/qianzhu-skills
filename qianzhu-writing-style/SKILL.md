@@ -16,12 +16,22 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 既想分享方法，也愿意留下成长痕迹的人
 - 更像个人号，不像机构号的人
 
+这个 skill 更像一个风格校准器和参考集，不是一张硬性规则表。
+
+尤其这次补进去的 AI 编程入坑相关内容，优先把它当成：
+
+- 语言习惯参考
+- 论证动作参考
+- 句子和转场的校准样本
+
+不要把它当成必须逐条执行的写作约束。
+
 先按这个顺序读：
 
 1. [references/persona.md](references/persona.md) 锁定身份、可信度和气质。
 2. [references/audience.md](references/audience.md) 判断这篇是写给谁看。
 3. [references/content-methodology.md](references/content-methodology.md) 选择文章主线和结构。
-4. 如果题目是 AI 编程入坑、IDE 入门、学生/小白建议、豆包/Deepseek/千问之后下一步该学什么，读 [references/ai-coding-entry.md](references/ai-coding-entry.md)。
+4. 如果题目是 AI 编程入坑、IDE 入门、学生/小白建议、豆包/Deepseek/千问之后下一步该学什么，读 [references/ai-coding-entry.md](references/ai-coding-entry.md) 看表达习惯、论证节奏和句子动作，不要把它当成硬模板。
 5. 如果题目来自一个看似很小、很日常、很互联网的现象，读 [references/everyday-insight.md](references/everyday-insight.md)。
 6. [references/style-guide.md](references/style-guide.md) 处理句子、语气和降晦涩。
 7. 如果还是太泛，再读 [references/style-examples.md](references/style-examples.md) 做风格校准。
@@ -61,11 +71,12 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 3. 为这篇文章先定两条线：
    - `价值线`：读者具体能拿走什么？
    - `成长线`：读者会看到作者哪一段真实变化、犹豫、试错或判断建立过程？
+4.5 如果原稿本身已经有明显口述感、重复强调和你个人的惯性表达，优先保留那种“像你本人在说话”的感觉，再用 references 做校准，不要反过来把原稿抹平成标准答案。
 4. 如果题材来自一个小现象、梗图、校园日常或互联网流行物，强制回答这三个问题：
    - 这件小事为什么值得写，而不只是“有点意思”？
    - 它暴露的是哪层结构：人性、传播、产品、关系，还是文化模板？
    - 这篇最后要留下的那个“更具体的提醒”到底是什么？
-5. 如果题材是 AI 编程入坑、IDE 入门、学生/小白建议或“人生 alpha”判断，强制回答这四个问题：
+5. 如果题材是 AI 编程入坑、IDE 入门、学生/小白建议或“人生 alpha”判断，优先参考这四个判断来捋顺主张：
    - 这篇真正想推荐的，到底是某个工具，还是一种能力杠杆？
    - 这篇是在讲“学会写代码”，还是在讲“先拿到编程结果”？
    - 对学生、非科班和小白来说，最该先练的到底是什么：语法，还是主动性、文件管理、上下文管理和参考拆解？
@@ -102,7 +113,7 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 少空洞大词，多具体动词和真实场景
 - 少“行业正确”，多亲手试过之后形成的判断
 - 写工程范式时不要做术语崇拜，要保留“阶段性有用，但未来可能被模型/平台吃掉”的清醒感
-- 写 AI 编程入坑稿时，不要写成“又来一个新工具”，而要写成“普通人为什么现在该先拿到这类能力”
+- 写 AI 编程入坑稿时，优先把工具推荐讲成能力杠杆，而不是只停在教程或测评层
 - 解释概念时优先类比、对比、场景
 - 内容要有用，但作者不能消失
 - 作者要真实，但内容不能退化成日记
