@@ -18,6 +18,7 @@
 - `推文/` 或同类分发稿
 - `assets/`：封面图 + 正文配图
 - `公众号/源稿-hosted.md`：图床回写后的可发布稿
+- 如果用户要求“保存到草稿箱 / 发到公众号草稿 / 最后一公里”，还要通过 ObsidianToMP 发布队列把终稿保存到微信公众号草稿箱，并检查结果文件。
 
 如果用户明确只要其中一部分，可以缩小范围。
 
@@ -70,6 +71,57 @@
 
 建议补一个 `scripts/run_fullchain.sh`，把上传图床和 hosted 回写串起来。
 
+## ObsidianToMP 草稿箱联动
+
+当用户明确说要“保存到草稿箱”“发到公众号草稿”“跑完最后一公里”“电脑关了也能手机继续编辑”时，默认使用 ObsidianToMP 的队列发布命令，而不是只提示用户手动复制。
+
+### 前提
+
+- 目标 vault 已安装并启用 `obsidian-to-mp`
+- Obsidian 已开启 CLI，并且桌面端正在运行
+- ObsidianToMP 设置里已经保存公众号信息
+- 终稿 frontmatter 至少包含：`标题`、`公众号`、`样式`、`代码高亮`、`封面` 或 `封面素材ID`
+
+### 队列请求
+
+在 vault 内写入：
+
+```text
+content/.obsidiantomp/publish-request.json
+```
+
+内容：
+
+```json
+{
+  "note": "02-内容生产/<项目>/公众号/源稿.md",
+  "account": "公众号名称或 wx 开头的 AppID",
+  "resultPath": "content/.obsidiantomp/publish-result.json",
+  "requestId": "<可选任务ID>"
+}
+```
+
+然后触发 Obsidian CLI：
+
+```bash
+obsidian vault="<Vault名称>" command id="obsidian-to-mp-publish-queued-draft"
+```
+
+发布后读取：
+
+```text
+content/.obsidiantomp/publish-result.json
+```
+
+如果 `ok: true`，说明已经保存到公众号草稿箱；记录 `media_id`。如果失败，把 `error` 原样反馈给用户，并说明是缺公众号配置、封面、IP 白名单、图片上传还是内容异常。
+
+### Skill 收尾规则
+
+- 如果用户只要“成稿”，不要擅自发布草稿。
+- 如果用户明确要“保存草稿”，必须写请求、触发命令、读结果，不要停在“你可以手动复制”。
+- 不要在 skill 里保存或打印 AppSecret；公众号密钥只留在 ObsidianToMP 插件设置里。
+- 如果 Obsidian CLI 不可用，交付到 `content/.obsidiantomp/publish-request.json` 并明确说明只差用户在 Obsidian 里执行 `发布队列稿件到公众号草稿箱`。
+
 ## 写作 skill 的责任边界
 
 `qianzhu-writing-style` 负责：
@@ -87,4 +139,5 @@
 - 封面图是否真实存在
 - 正文配图是否真实存在
 - hosted 稿是否已经生成
+- 如果要求保存到公众号草稿箱，ObsidianToMP 队列发布是否已经返回 `ok: true`
 - 如果缺任何一项，是否已经明确说明还没完成

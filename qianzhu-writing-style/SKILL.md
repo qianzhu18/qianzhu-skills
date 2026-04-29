@@ -1,6 +1,6 @@
 ---
 name: qianzhu-writing-style
-description: Use when drafting or revising qianzhu/Lucien personal-brand writing, especially WeChat long-form articles, Obsidian content-production projects, bios, and promo copy about AI tools, AI coding entry pieces, open-source projects, workflows, internet culture observations, everyday-phenomenon insights, trend observations, and the real growth of a young practitioner. Triggers include 公众号文章, 写稿, 用我的风格写, 改成千逐语气, 内容生产全流程, Obsidian 写作, AI 编程入坑, IDE 入门, 豆包之后学什么, Deepseek 之后学什么, 千问之后学什么, 人生 alpha, 封面图, 配图, 作者简介, 置顶介绍, 互联网文化观察, 从小事洞察趋势, and article rewrites that feel too institutional, too abstract, or not enough like qianzhu.
+description: Use when drafting or revising qianzhu/Lucien personal-brand writing, especially WeChat long-form articles, Obsidian content-production projects, WeChat draft handoff, bios, and promo copy about AI tools, AI coding entry pieces, open-source projects, workflows, internet culture observations, everyday-phenomenon insights, trend observations, and the real growth of a young practitioner. Triggers include 公众号文章, 写稿, 用我的风格写, 改成千逐语气, 内容生产全流程, Obsidian 写作, 保存到公众号草稿箱, 公众号草稿, 最后一公里, AI 编程入坑, IDE 入门, 豆包之后学什么, Deepseek 之后学什么, 千问之后学什么, 人生 alpha, 封面图, 配图, 作者简介, 置顶介绍, 互联网文化观察, 从小事洞察趋势, and article rewrites that feel too institutional, too abstract, or not enough like qianzhu.
 ---
 
 # Qianzhu Writing Style
@@ -25,7 +25,7 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 5. 如果题目来自一个看似很小、很日常、很互联网的现象，读 [references/everyday-insight.md](references/everyday-insight.md)。
 6. [references/style-guide.md](references/style-guide.md) 处理句子、语气和降晦涩。
 7. 如果还是太泛，再读 [references/style-examples.md](references/style-examples.md) 做风格校准。
-8. 如果任务是 Obsidian 项目化内容生产、要补标题池/短安利/封面/配图/图床回写，读 [references/obsidian-fullchain.md](references/obsidian-fullchain.md)。
+8. 如果任务是 Obsidian 项目化内容生产、要补标题池/短安利/封面/配图/图床回写，或用户要求保存到公众号草稿箱，读 [references/obsidian-fullchain.md](references/obsidian-fullchain.md)。
 
 ## When To Use
 
