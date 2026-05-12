@@ -21,6 +21,7 @@ This skill is designed to keep the writing:
 - judgment-driven
 - human
 - growth-oriented instead of institutional
+- aware of title / cover conversion at the distribution entrance
 
 ### `wechat-cover`
 
@@ -41,6 +42,7 @@ qianzhu-writing-style/
     ├── audience.md
     ├── content-methodology.md
     ├── persona.md
+    ├── title-cover-growth.md
     ├── style-examples.md
     └── style-guide.md
 wechat-cover/

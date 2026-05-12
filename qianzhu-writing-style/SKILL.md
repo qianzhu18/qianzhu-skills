@@ -33,9 +33,10 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 3. [references/content-methodology.md](references/content-methodology.md) 选择文章主线和结构。
 4. 如果题目是 AI 编程入坑、IDE 入门、学生/小白建议、豆包/Deepseek/千问之后下一步该学什么，读 [references/ai-coding-entry.md](references/ai-coding-entry.md) 看表达习惯、论证节奏和句子动作，不要把它当成硬模板。
 5. 如果题目来自一个看似很小、很日常、很互联网的现象，读 [references/everyday-insight.md](references/everyday-insight.md)。
-6. [references/style-guide.md](references/style-guide.md) 处理句子、语气和降晦涩。
-7. 如果还是太泛，再读 [references/style-examples.md](references/style-examples.md) 做风格校准。
-8. 如果任务是 Obsidian 项目化内容生产、要补标题池/短安利/封面/配图/图床回写，读 [references/obsidian-fullchain.md](references/obsidian-fullchain.md)。
+6. 如果任务涉及公众号标题、长文标题、封面优化、点击率、阅读转化、黑白封面参考、标题池或“标题像总结不是钩子”，先读 [references/title-cover-growth.md](references/title-cover-growth.md)。
+7. [references/style-guide.md](references/style-guide.md) 处理句子、语气和降晦涩。
+8. 如果还是太泛，再读 [references/style-examples.md](references/style-examples.md) 做风格校准。
+9. 如果任务是 Obsidian 项目化内容生产、要补标题池/短安利/封面/配图/图床回写，读 [references/obsidian-fullchain.md](references/obsidian-fullchain.md)。
 
 ## When To Use
 
@@ -71,6 +72,10 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 3. 为这篇文章先定两条线：
    - `价值线`：读者具体能拿走什么？
    - `成长线`：读者会看到作者哪一段真实变化、犹豫、试错或判断建立过程？
+3.5 如果用户给的是 `01-选题库/`、`候选题卡`、`参考原文`、`原始口述稿` 这类素材，默认把它们当成**参考源**，不是最终成品文件：
+   - 不要覆盖、润色回写或改写原文件，除非用户明确说“直接改这份原文”。
+   - 默认把成稿写到 `02-内容生产/<项目>/公众号/源稿.md` 或对应项目目录。
+   - 如果需要保留口语感、原句或结构，就在新成稿里消化吸收，不要回写覆盖参考稿。
 4.5 如果原稿本身已经有明显口述感、重复强调和你个人的惯性表达，优先保留那种“像你本人在说话”的感觉，再用 references 做校准，不要反过来把原稿抹平成标准答案。
 4. 如果题材来自一个小现象、梗图、校园日常或互联网流行物，强制回答这三个问题：
    - 这件小事为什么值得写，而不只是“有点意思”？
@@ -96,17 +101,44 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
    - 封面图：用 `wechat-cover` 管理公众号封面的审美、prompt、候选图、模型降级策略和图床验证；默认要有 1 张最终可用封面，不要只停在提示词。
    - 正文配图：公众号默认 3-5 张，小红书按卡片节奏补图。
    - 如果自动生图失败，要继续手动补图或明确说明阻塞原因；“没封面/没图”不算完成。
+12.5 如果用户给过本地图片、截图、PPT 导出图、二维码图或任何需要“转换 / 裁切 / 重命名 / 压缩 / 回写”的原始图像素材：
+   - 必须在项目内单独保留一份原始素材，不得只保留转换后的版本。
+   - 默认放到 `素材/原始图片/`，并补一份 `素材/原始素材清单.md` 说明来源、用途和是否已被转换使用。
+   - `assets/` 里的封面图、正文配图、裁切图、压缩图，不能覆盖或替代原始素材。
+   - 这些原图默认视为后续公众号写作和素材积累的一部分，不得因为“已经转成成品图”就删除。
 13. 如果流程需要分发资产，再额外产出：
    - 标题池与推荐标题拆解
    - 1-3 条作者简介 / 置顶介绍
    - 3-5 条短信息流安利文案，每条不超过 100 字
+13.5 如果任务包含公众号标题、长文标题、封面优化或“阅读量上不来是不是标题问题”，默认增加一轮入口层检查：
+   - 标题是在“概括主题”，还是在“建立点击理由”？
+   - 标题有没有具体对象、冲突、代价感或已得出的判断？
+   - 封面是在“装饰正文”，还是在“建立作品感”？
+   - 如果阅读量低，先把问题定位成 `标题钩子 + 封面识别 + 账号定位 + 选题匹配` 的组合问题，不要自动把锅全甩给标题。
 14. 如果任务落在 Obsidian 项目目录里，默认把结果组织成可复用项目，而不是零散文案：
    - `公众号/源稿.md`
    - `title/公众号-爆款标题候选.md`
    - `title/短信息流安利文案.md`
    - `推文/` 或其他分发稿
    - `assets/` 封面与配图
+   - `素材/` 原始图片与素材说明
    - 可发布的 hosted 稿或明确的未完成说明
+15. 如果用户明确说的是“跑完公众号全流程”“直接出最终公众号成品”“把这条链路全部跑完”“直接跑完配图、封面、图床配置”，默认按全链路完成态执行，不要擅自缩成局部任务：
+   - `公众号/源稿.md`
+   - `title/公众号-爆款标题候选.md`
+   - `title/短信息流安利文案.md`
+   - `推文/` 或同类分发稿
+   - `assets/` 中真实存在、可发布的封面图和正文配图
+   - 如果用户给过本地图片：`素材/原始图片/` + `素材/原始素材清单.md`
+   - 图床上传已实际跑通
+   - `公众号/源稿-hosted.md` 已回写成可发布稿
+   - 其中任何一项缺失，都不应对用户说“已经跑完”
+16. 如果用户明确要求“闭环到公众号草稿箱”“直接同步到草稿箱”“发到公众号后台草稿”，把“完成态”再往前推一步：
+   - 先确保 `公众号/源稿-hosted.md` 已生成
+   - 优先复用当前机器已有的 Obsidian / 本地发布链路，不要重新手工复制粘贴
+   - 如果本机已有公众号草稿箱自动化脚本或浏览器发布脚本，继续执行到“草稿已保存”
+   - 如果需要登录态，优先复用已有浏览器会话；确实缺登录时，再明确告诉用户阻塞点
+   - 只有草稿箱实际保存成功，才算“发布闭环完成”
 
 ## Non-Negotiables
 
@@ -122,7 +154,11 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 如果写的是平常事物洞察，不能只停在“这东西挺有意思”，必须继续拆到更深一层结构
 - 结尾必须落在一个具体判断、提醒或行动视角上，不能用礼貌性互动话术把力度冲掉
 - 做全链路内容生产时，不要把“正文写完”误判成“项目完成”
+- 如果用户给的是参考原文、选题库草稿或口述素材，默认保留原稿不动，成品另写到内容生产目录
 - 做公众号项目时，没有封面图和最终可发稿，默认不算收尾
+- 如果用户提供了本地图片原件，必须保留原始素材；转换图、裁切图、压缩图都不能替代原图
+- 如果用户明确要求“跑完公众号全流程”，不能只交正文、提示词、截图说明或半成品，必须把发布链路跑到 `hosted` 成稿
+- 如果用户明确要求同步公众号草稿箱，不能只生成 hosted 稿，必须继续推进到后台草稿保存成功，或明确说明卡在哪一步
 
 ## Failure Modes
 
@@ -135,6 +171,8 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - 太端着、太严肃，像一篇“应该被转发”的文章，而不是一个人真的在说话
 - 明明抓到了一个日常现象，但最后只写成“挺有意思的观察”，没有再往深处拆
 - 结尾已经有判断了，又滑回“这也是我最近越来越有感觉的一件事”“欢迎交流”“之后还会继续写”这种弱收尾
+- 标题像文章摘要、像高考作文总结句，而不像一个值得点开的判断入口
+- 封面只是配图或氛围图，没有把长文抬成一个有识别度的作品
 - 正文写得不错，但封面、配图、hosted 稿没补，导致链路断在最后一步
 - 明明是 Obsidian 项目，却没有显式调用 `wechat-cover` 处理公众号封面，或没有调用 `smart-illustrator` 处理正文配图
 
@@ -145,6 +183,7 @@ description: Use when drafting or revising qianzhu/Lucien personal-brand writing
 - [references/content-methodology.md](references/content-methodology.md): 内容主线、结构模板、双线写法
 - [references/ai-coding-entry.md](references/ai-coding-entry.md): AI 编程入坑、IDE 入门、学生/小白建议、人生 alpha 叙事
 - [references/everyday-insight.md](references/everyday-insight.md): 平常事物洞察写法、SBTI 类文章校准
+- [references/title-cover-growth.md](references/title-cover-growth.md): 标题是钩子不是总结、黑白封面作品感、入口层增长校准
 - [references/style-guide.md](references/style-guide.md): 语气、结构、降晦涩、去机构感、短安利规范
 - [references/style-examples.md](references/style-examples.md): 句型示例、开头结尾参考、定位句校准
 - [references/obsidian-fullchain.md](references/obsidian-fullchain.md): Obsidian 项目化内容生产、封面/配图联动、完成态定义
